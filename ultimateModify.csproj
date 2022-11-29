@@ -1,0 +1,277 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <AssemblyName>FdMagicBox</AssemblyName>
+    <Description>test mod for ultimate admiral dreadnoughts</Description>
+    <Version>1.0.0</Version>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>latest</LangVersion>
+    <PackageId>ultimate modify</PackageId>
+    <Authors>fd.fly</Authors>
+    <Product>ultimate modify</Product>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BepInEx.IL2CPP" Version="6.0.0-pre.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppMono.Security">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\Il2CppMono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2Cppmscorlib">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\Il2Cppmscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\Il2CppSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Configuration">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\Il2CppSystem.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Core">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\Il2CppSystem.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Data">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\Il2CppSystem.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Numerics">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\Il2CppSystem.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Runtime.Serialization">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\Il2CppSystem.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Xml">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\Il2CppSystem.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppSystem.Xml.Linq">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\Il2CppSystem.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="NavMeshComponents">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\NavMeshComponents.dll</HintPath>
+    </Reference>
+    <Reference Include="NavMeshComponentsExamples">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\NavMeshComponentsExamples.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AndroidJNIModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.AndroidJNIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.ClusterRendererModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DSPGraphModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.DSPGraphModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GIModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.GIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.ProfilerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubsystemsModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.SubsystemsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.TextCoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsNativeModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.UIElementsNativeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityCurlModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.UnityCurlModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityTestProtocolModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.VFXModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VirtualTexturingModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.VirtualTexturingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="VacuumShaders.TheAmazingWireframeShader">
+      <HintPath>..\..\steamlibbackcup\Ultimate.Admiral.Dreadnoughts\BepInEx\unhollowed\VacuumShaders.TheAmazingWireframeShader.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
